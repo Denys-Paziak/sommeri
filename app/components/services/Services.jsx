@@ -22,7 +22,7 @@ const Services = () => {
             duration: 2,
             ease: "power2.inOut",
         },"0").to(path, {
-            fill: "#2696a8",
+            fill: "#fff",
             stroke: "#2696a8",
             duration: 1,
             ease: "power2.inOut",
