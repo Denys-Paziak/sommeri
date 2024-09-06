@@ -1,0 +1,79 @@
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@property --line-width {
+    syntax: "<percentage>";
+    initial-value: 100%;
+    inherits: false;
+}
+
+.anim_border {
+    position: relative;
+    padding: 1px;
+}
+
+.anim_border:after {
+    --angle: 0deg;
+    --line-width: 100%;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    background: conic-gradient(from var(--angle), transparent var(--line-width), var(--primary));
+    translate: -50% -50%;
+    z-index: -1;
+    border-radius: 10px;
+    transition: 0.6s;
+}
+
+.static:after  {
+    --angle: -80deg;
+    --line-width: 10%;
+    background: conic-gradient(from var(--angle), transparent var(--line-width), rgba(38, 150, 168, 1));
+}
+
+.animation:after {
+    --angle: -45deg;
+    --line-width: 90%;
+    background: conic-gradient(from var(--angle), transparent var(--line-width), var(--primary));
+    animation: rotate 6s infinite linear;
+    animation-play-state: paused;
+
+}
+
+.animation:hover:after {
+    animation-play-state: running;
+}
+
+.content {
+    height: 100%;
+    border-radius: 10px;
+    background: var(--black);
+}
+
+@keyframes rotate {
+    from {
+       --angle: -45deg;
+    }
+
+    to {
+        --angle: 315deg;
+    }
+}
+
+
+@keyframes hover {
+    from {
+
+        --line-width: 100%;
+    }
+
+    to {
+        --line-width: 0%;
+    }
+}
