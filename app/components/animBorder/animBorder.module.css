@@ -35,14 +35,12 @@
     --angle: -80deg;
     --line-width: 10%;
     background: conic-gradient(from var(--angle), transparent var(--line-width), rgba(38, 150, 168, 1));
-    animation: rotate 6s infinite linear;
 }
 
 .animation:after {
     --angle: -45deg;
-    --line-width: 90%;
-    background: conic-gradient(from var(--angle), transparent var(--line-width), var(--primary));
-    animation: rotate 6s infinite linear;
+    --line-width: 0%;
+    background: conic-gradient(from var(--angle),transparent, transparent , transparent, transparent);
 }
 
 .content {

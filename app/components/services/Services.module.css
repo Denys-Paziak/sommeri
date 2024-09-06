@@ -93,7 +93,7 @@
     font-size: 40px;
     font-weight: 500;
     line-height: 58px;
-    color: var(--gray-transparent);
+    color: #fff;
     transition: 0.6s;
 }
 
@@ -116,8 +116,8 @@
     font-weight: 200;
     line-height: 24px;
     color: var(--white);
-    max-height: 0px;
-    overflow: hidden;
+    /*max-height: 0px;*/
+    /*overflow: hidden;*/
     opacity: 0.8;
     transition: 0.6s;
 }

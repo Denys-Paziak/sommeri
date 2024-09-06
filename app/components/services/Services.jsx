@@ -20,13 +20,9 @@ const Services = () => {
         tl.to(path, {
             strokeDashoffset: 0,
             duration: 2,
+            stroke: "#fff",
             ease: "power2.inOut",
-        },"0").to(path, {
-            fill: "#fff",
-            stroke: "#2696a8",
-            duration: 1,
-            ease: "power2.inOut",
-        },"1");
+        },"0")
     };
 
     const handleMouseLeave = (index) => {
@@ -35,7 +31,7 @@ const Services = () => {
         gsap.killTweensOf(path);
         gsap.to(path, {
             strokeDashoffset: length,
-            fill: "rgba(255,255,255,0.05)",
+            fill: "rgba(255,255,255,0.0)",
             duration: 2,
             ease: "power2.inOut",
         });
