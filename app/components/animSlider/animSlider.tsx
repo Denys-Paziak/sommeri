@@ -27,7 +27,6 @@ const AnimSlider = () => {
                 </div>
             </div>
         </div>
-
     );
 };
 
