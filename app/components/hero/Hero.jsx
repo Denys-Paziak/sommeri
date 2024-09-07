@@ -27,9 +27,9 @@ const Hero = () => {
         startLineAnim(lines[2], 2);
 
         setTimeout(() => {
-            startLineAnim(lines[10], 0);
-            startLineAnim(lines[11], 2);
-        }, 20000);
+            startLineAnim(lines[12], 3);
+            startLineAnim(lines[13], 0);
+        }, 19000);
 
 
     }, []);
