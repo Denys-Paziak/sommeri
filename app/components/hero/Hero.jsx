@@ -4,7 +4,7 @@ import React, {useEffect, useRef, useState} from "react";
 import styles from "./Hero.module.css";
 import SecondaryButton from "../UI/secondary-button/SecondaryButton";
 import HeroBrand from "./components/HeroBrand";
-import PrimaryButtonArrow from "../UI/primary-button-arrow/PrimaryButtonArrow";
+import Button from "@/app/components/UI/button/Button";
 import gsap from "gsap";
 import {MouseParallaxContainer, MouseParallaxChild} from "react-parallax-mouse";
 
@@ -57,9 +57,9 @@ const Hero = () => {
                             </p>
                         </div>
                         <div className={styles.hero__wrapper_actions}>
-                            <PrimaryButtonArrow arrowColor={"#fff"} type={"button"}>
+                            <Button arrowColor={"#fff"} type={"button"}>
                                 Contact Us
-                            </PrimaryButtonArrow>
+                            </Button>
                             <SecondaryButton type={"button"}>Our Projects</SecondaryButton>
                         </div>
                         <div className={styles.hero__wrapper_brands}>

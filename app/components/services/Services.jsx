@@ -20,7 +20,7 @@ const Services = () => {
         tl.to(path, {
             strokeDashoffset: 0,
             duration: 2,
-            stroke: "#fff",
+            stroke: "#2696a8",
             ease: "power2.inOut",
         },"0")
     };
@@ -31,7 +31,7 @@ const Services = () => {
         gsap.killTweensOf(path);
         gsap.to(path, {
             strokeDashoffset: length,
-            fill: "rgba(255,255,255,0.0)",
+            fill: "rgba(255,255,255,0)",
             duration: 2,
             ease: "power2.inOut",
         });

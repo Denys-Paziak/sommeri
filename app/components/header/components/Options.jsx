@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "../Header.module.css";
-import PrimaryButtonArrow from "@/app/components/UI/primary-button-arrow/PrimaryButtonArrow";
+import Button from "@/app/components/UI/button/Button";
 
 const Options = () => {
   return (
     <div className={styles.header__wrapper_options}>
-      <PrimaryButtonArrow>Contact us</PrimaryButtonArrow>
+      <Button style={"fill"}>Contact us</Button>
     </div>
   );
 };
