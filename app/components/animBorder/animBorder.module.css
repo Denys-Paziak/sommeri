@@ -10,6 +10,31 @@
     inherits: false;
 }
 
+
+@property --border-gradient-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn
+}
+
+@property --outer-radius {
+    syntax: '<length>';
+    inherits: false;
+    initial-value: 0.5rem;
+}
+
+@property --border-size {
+    syntax: '<length>';
+    inherits: false;
+    initial-value: 1px;
+}
+
+@property --inner-radius {
+    syntax: '<length>';
+    inherits: false;
+    initial-value: calc(var(--outer-radius) - var(--border-size));
+}
+
 .anim_border {
     position: relative;
     padding: 1px;
@@ -31,42 +56,26 @@
     transition: 0.6s;
 }
 
-.static:after  {
-    --angle: -80deg;
-    --line-width: 10%;
-    background: conic-gradient(from var(--angle), transparent var(--line-width), rgba(38, 150, 168, 1));
+.anim_border:after {
+    background-image: conic-gradient(from var(--border-gradient-angle) at -10% 100%, transparent, transparent 20%, var(--primary));
 }
 
-.animation:after {
-    --angle: -45deg;
-    --line-width: 0%;
-    background: conic-gradient(from var(--angle),transparent, transparent , transparent, transparent);
+.anim_border:hover:after {
+    animation: borderSpin 1.5s cubic-bezier(.52,.2,.43,1) forwards;
+}
+
+@keyframes borderSpin {
+    0% {
+        --border-gradient-angle: 0turn;
+    }
+
+    100% {
+        --border-gradient-angle: 1turn;
+    }
 }
 
 .content {
     height: 100%;
     border-radius: 10px;
     background: var(--black);
-}
-
-@keyframes rotate {
-    from {
-       --angle: -45deg;
-    }
-
-    to {
-        --angle: 315deg;
-    }
-}
-
-
-@keyframes hover {
-    from {
-
-        --line-width: 100%;
-    }
-
-    to {
-        --line-width: 0%;
-    }
 }
