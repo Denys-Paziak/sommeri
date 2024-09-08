@@ -55,16 +55,34 @@
 
 .services__main_card {
   height: 318px;
-  background-image: url("../../../public/images/card-noise.png");
+  background-image: url("../../../../public/images/card-noise.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  border-radius: 12px;
+  border-radius: 10px;
   position: relative;
   padding: 20px;
   cursor: pointer;
   transition: 0.8s;
-  border: 1px solid transparent;
+  overflow: hidden;
+}
+
+.services__main_card::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: 1px;
+  box-shadow: 0 0 600px 100px var(--primary);
+  border-radius: 50%;
+  opacity: 0;
+  background: var(--primary);
+  transition: 0.5s 0.5s;
+}
+
+.services__main_card:hover::before {
+  opacity: 0.4;
 }
 
 .services__main_card:hover {
@@ -122,10 +140,14 @@
   font-weight: 200;
   line-height: 24px;
   color: var(--white);
-  /*max-height: 0px;*/
-  /*overflow: hidden;*/
   opacity: 0.8;
   transition: 0.6s;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+.services__main_card:hover .services__inner_text {
+  max-height: 100px;
 }
 
 .services__card_image {
@@ -137,8 +159,14 @@
 }
 
 .services__card_image path {
-  stroke-dasharray: 500;
-  fill: var(--gray-transparent);
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  fill: transparent;
+}
+
+.services__vector_icon {
+  max-width: 200px;
+  height: auto;
 }
 
 @media (max-width: 1100px) {

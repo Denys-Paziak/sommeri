@@ -91,6 +91,15 @@
   align-items: center;
   justify-content: space-between;
 }
+.hero__brands_item {
+  transition: 0.4s;
+}
+.hero__brands_item > svg {
+  opacity: 0.5;
+}
+.hero__brands_item:hover > svg {
+  opacity: 1;
+}
 .hero__wrapper_code {
   width: 132px;
   height: 132px;
