@@ -5,6 +5,7 @@ import Hero from "@/app/components/home/hero/Hero";
 import Services from "@/app/components/home/services/Services";
 import About from "@/app/components/home/about/About";
 import Technologies from "@/app/components/home/technologies/Technologies";
+import OurProjects from "@/app/components/home/ourProjects/OurProjects";
 
 // Import with next's dynamic import
 import dynamic from "next/dynamic";
@@ -34,6 +35,7 @@ export default function Home() {
       <Services />
       <About />
       <Technologies />
+      <OurProjects />
     </div>
   );
 }

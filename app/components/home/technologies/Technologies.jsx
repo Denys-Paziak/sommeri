@@ -5,7 +5,7 @@ import styles from "./Technologies.module.css";
 
 const Technologies = () => {
   return (
-    <div className={styles.technologies__section}>
+    <section className={styles.technologies__section}>
       <div className="container">
         <div className={styles.technologies__wrapper}>
           <h2 className={styles.technologies__wrapper_title}>
@@ -135,7 +135,7 @@ const Technologies = () => {
         </div> */}
         <div className={styles.technologies__sliders_shadow}></div>
       </div>
-    </div>
+    </section>
   );
 };
 
