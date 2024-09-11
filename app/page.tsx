@@ -1,13 +1,8 @@
 "use client";
 
 import Header from "@/app/components/header/Header";
-import Hero from "@/app/components/home/hero/Hero";
-import Services from "@/app/components/home/services/Services";
-import About from "@/app/components/home/about/About";
-import Technologies from "@/app/components/home/technologies/Technologies";
-import OurProjects from "@/app/components/home/ourProjects/OurProjects";
+import HomePage from "@/app/components/home/HomePage";
 
-// Import with next's dynamic import
 import dynamic from "next/dynamic";
 
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
@@ -31,11 +26,7 @@ export default function Home() {
         }}
       />
       <Header />
-      <Hero />
-      <Services />
-      <About />
-      <Technologies />
-      <OurProjects />
+      <HomePage />
     </div>
   );
 }
