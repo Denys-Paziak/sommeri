@@ -17,7 +17,8 @@ export default function Home() {
         outerSize={50}
         innerSize={8}
         innerStyle={{
-          backgroundColor: "rgb(0, 0, 0)",
+          backgroundColor: "rgb(255, 255, 255)",
+            mixBlendMode: "difference"
         }}
         outerScale={2}
         outerAlpha={1}

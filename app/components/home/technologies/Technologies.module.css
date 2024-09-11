@@ -188,12 +188,12 @@
 
 
 .animLeft {
-  animation: scrollLeft 10s linear infinite;
+  animation: scrollLeft 50s linear infinite;
 
 }
 
 .animRight {
-  animation: scrollRight 10s linear infinite;
+  animation: scrollRight 50s linear infinite;
 }
 
 
