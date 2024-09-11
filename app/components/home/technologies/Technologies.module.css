@@ -55,11 +55,10 @@
   top: 0;
 }
 .technologies__slider_track {
-  animation: scroll 10s linear infinite;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc(250px * 20);
+  width: calc(300px * 8);
   display: flex;
   align-items: center;
   gap: 20px;
@@ -73,6 +72,7 @@
   background: var(--white-gray);
   border-radius: 12px;
   display: flex;
+  width: 300px;
   align-items: center;
   justify-content: center;
   gap: 12px;
@@ -181,9 +181,23 @@
   position: absolute;
   right: 0;
   bottom: 0;
+  z-index: 0;
+  pointer-events: none;
 }
 
-@keyframes scroll {
+
+
+.animLeft {
+  animation: scrollLeft 10s linear infinite;
+
+}
+
+.animRight {
+  animation: scrollRight 10s linear infinite;
+}
+
+
+@keyframes scrollLeft {
   0% {
     transform: translateX(0%);
   }
@@ -194,5 +208,21 @@
 
   100% {
     transform: translateX(0%);
+  }
+}
+
+
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  50% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
   }
 }

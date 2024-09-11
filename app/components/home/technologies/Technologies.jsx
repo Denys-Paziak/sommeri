@@ -70,9 +70,9 @@ const Technologies = () => {
       </div>
       <div className={styles.technologies__slider}>
         {technologies.map((technologyBlocks, index) => (
-          <div key={index} className={styles.technologies__slider_track}>
+          <div key={index} className={`${styles.technologies__slider_track} ${index % 2 === 0 ? styles.animLeft : styles.animRight}`}>
             {technologyBlocks.map((technologyBlock, index) => (
-              <div key={index} className={styles.technologies__slider_item}>
+              <div key={index} className={ `${styles.technologies__slider_item} `}>
                 <Image
                   src={technologyBlock.image_url}
                   alt="technology logo"
