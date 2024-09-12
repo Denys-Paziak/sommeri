@@ -24,23 +24,23 @@ const LineVector = () => {
                 end: 0, // Кінець на початку шляху
             },
             scrollTrigger: {
-                trigger: containerRef.current, // Головний div є тригером для скролу
-                start: "top center", // Початок анімації, коли верх div'а доходить до верху екрану
-                end: "bottom top", // Кінець анімації, коли низ div'а доходить до низу екрану
-                scrub: 1, // Прив'язка анімації до скролу
+                trigger: containerRef.current,
+                start: "top center",
+                end: "bottom top",
+                scrub: 1,
             }
         });
     }, []);
 
     return (
         <div ref={containerRef} className={styles.vector}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="330" height="989" viewBox="0 0 350 1100" fill="none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="350" height="1000" viewBox="0 0 350 1100" fill="none">
                 <path
-                    id="path" // ID для шляху, по якому рухатиметься коло
+                    id="path"
                     d="M102.367 988C237.778 854.323 324.078 701.5 292.468 609.281C263.313 524.221 0.999994 364.5 1.00001 229.815C1.00002 95.1303 66.6977 52.7173 136.131 1"
                     stroke="url(#paint0_linear_51_17)" strokeLinecap="round" strokeLinejoin="round" />
                 <circle
-                    ref={svgCircle} // Посилання на коло
+                    ref={svgCircle}
                     cx="242.929"
                     cy="531.9"
                     r="10"

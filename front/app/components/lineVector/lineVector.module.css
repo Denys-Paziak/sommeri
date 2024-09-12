@@ -2,13 +2,10 @@
     position: relative;
     display: flex;
     justify-content: center;
+    width: 350px;
     height: 100%;
+    overflow: hidden;
 }
-
-.vector svg {
-    height: 100%;
-}
-
 
 .vector:before {
     content: "";

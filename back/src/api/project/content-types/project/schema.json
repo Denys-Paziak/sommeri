@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Project_name": {
+      "type": "string"
+    },
+    "About_the_project": {
+      "type": "text"
+    },
+    "Objectives": {
+      "type": "text"
+    },
+    "Solution": {
+      "type": "text"
+    },
+    "We_did": {
+      "type": "text"
+    },
+    "Result": {
+      "type": "text"
+    },
+    "Hero_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Technologies": {
+      "type": "customField",
+      "options": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "WordPress",
+        "PHP"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "Category": {
+      "type": "customField",
+      "options": [
+        "Landing page",
+        "DDD"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "adads": {
+      "type": "customField",
+      "options": [
+        "віа",
+        "іва",
+        "іваві",
+        "аіва"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    }
+  }
+}
