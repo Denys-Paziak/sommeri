@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./About.module.css";
 import SecondaryButton from "@/app/components/UI/secondaryButton/SecondaryButton";
+import LineVector from "@/app/components/lineVector/LineVector";
 
 const About = () => {
   return (
@@ -37,6 +38,9 @@ const About = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className={styles.vector}>
+        <LineVector/>
       </div>
     </section>
   );

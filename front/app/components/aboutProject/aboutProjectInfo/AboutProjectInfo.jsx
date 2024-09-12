@@ -1,4 +1,5 @@
 import styles from "./AboutProjectInfo.module.css";
+import LineVector from "@/app/components/lineVector/LineVector";
 
 const AboutProjectInfo = () => {
   return (
@@ -61,7 +62,9 @@ const AboutProjectInfo = () => {
               </div>
             </div>
           </div>
-          <div className={styles.project__info_vector}></div>
+          <div className={styles.project__info_vector}>
+            <LineVector/>
+          </div>
         </div>
       </div>
     </section>
