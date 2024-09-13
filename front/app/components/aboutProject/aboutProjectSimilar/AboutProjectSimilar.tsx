@@ -1,7 +1,8 @@
 import styles from "./AboutProjectSimilar.module.css";
 import SimilarProjects from "@/app/components/similarProjects/SimilarProjects";
+import {ProjectInterface} from "@/app/project/[id]/ProjectInterface";
 
-const AboutProjectSimilar = () => {
+const AboutProjectSimilar = ({project}: {project: ProjectInterface}) => {
   return (
     <section className={styles.similar__projects_section}>
       <div className="container">

@@ -13,11 +13,11 @@ const AboutProject = ({project}: {project: ProjectInterface}) => {
         <main>
             <AboutProjectTopBar project={project}/>
             <AboutProjectBanner project={project}/>
-            <AboutProjectInfo/>
-            <AboutProjectFrame/>
-            <AboutProjectMockup/>
-            <AboutProjectGalery/>
-            <AboutProjectSimilar/>
+            <AboutProjectInfo project={project}/>
+            <AboutProjectFrame project={project}/>
+            <AboutProjectMockup project={project}/>
+            <AboutProjectGalery project={project}/>
+            <AboutProjectSimilar  project={project}/>
             <AboutProjectReviews/>
         </main>
     );

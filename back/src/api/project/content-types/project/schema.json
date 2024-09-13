@@ -27,9 +27,6 @@
     "We_did": {
       "type": "text"
     },
-    "Result": {
-      "type": "text"
-    },
     "Hero_image": {
       "type": "media",
       "multiple": false,
@@ -60,15 +57,43 @@
       ],
       "customField": "plugin::multi-select.multi-select"
     },
-    "adads": {
-      "type": "customField",
-      "options": [
-        "віа",
-        "іва",
-        "іваві",
-        "аіва"
+    "Result": {
+      "type": "richtext"
+    },
+    "We_did_2": {
+      "type": "text"
+    },
+    "About_project_mockup": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "About_project_galery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "About_project_frame": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
       ],
-      "customField": "plugin::multi-select.multi-select"
+      "type": "media",
+      "multiple": false
     }
   }
 }

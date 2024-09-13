@@ -7,6 +7,7 @@ import dynamic from "next/dynamic";
 import {useEffect, useState} from "react";
 import {getProject} from "@/app/utils/server/server";
 import {ProjectInterface} from "@/app/project/[id]/ProjectInterface";
+import CustomCursor from "@/app/components/UI/customCursor/CustomCursor";
 
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
@@ -24,19 +25,7 @@ const Project = ({ params }: { params: { id: string } }) => {
 
   return (
     <div>
-      <AnimatedCursor
-        color={"255, 255, 255"}
-        outerSize={50}
-        innerSize={8}
-        innerStyle={{
-          backgroundColor: "rgb(0, 0, 0)",
-        }}
-        outerScale={2}
-        outerAlpha={1}
-        outerStyle={{
-          mixBlendMode: "difference",
-        }}
-      />
+        <CustomCursor/>
       <Header />
         {project && <AboutProject project={project}/>}
     </div>

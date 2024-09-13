@@ -379,7 +379,6 @@ export interface ApiProjectProject extends Schema.CollectionType {
     Objectives: Attribute.Text;
     Solution: Attribute.Text;
     We_did: Attribute.Text;
-    Result: Attribute.Text;
     Hero_image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     Technologies: Attribute.JSON &
       Attribute.CustomField<
@@ -391,16 +390,18 @@ export interface ApiProjectProject extends Schema.CollectionType {
         'plugin::multi-select.multi-select',
         ['Landing page', 'DDD']
       >;
-    adads: Attribute.JSON &
-      Attribute.CustomField<
-        'plugin::multi-select.multi-select',
-        [
-          '\u0432\u0456\u0430',
-          '\u0456\u0432\u0430',
-          '\u0456\u0432\u0430\u0432\u0456',
-          '\u0430\u0456\u0432\u0430'
-        ]
-      >;
+    Result: Attribute.RichText;
+    We_did_2: Attribute.Text;
+    About_project_mockup: Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    About_project_galery: Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    About_project_frame: Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
