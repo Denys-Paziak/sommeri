@@ -16,6 +16,7 @@
     "react-dom": "^18",
     "react-markdown": "^8.0.6",
     "react-parallax-mouse": "^2.1.0",
+    "react-responsive-masonry": "^2.3.0",
     "swiper": "^11.1.12"
   },
   "devDependencies": {
