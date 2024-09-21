@@ -74,7 +74,7 @@
   bottom: 0;
   width: 1px;
   height: 1px;
-  box-shadow: 0 0 600px 100px var(--primary);
+  box-shadow: 0 0 200px 100px var(--primary);
   border-radius: 50%;
   opacity: 0;
   background: var(--primary);
